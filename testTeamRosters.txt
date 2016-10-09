@@ -1,0 +1,19 @@
+CHI%{'1948': ['Joe Abbey'], '2002': ['Rabih Abdullah'], '2003': ['Rabih Abdullah']}
+NYB%{'1949': ['Joe Abbey']}
+DAY%{'1928': ['Fay Abbott'], '1922': ['Fay Abbott'], '1926': ['Fay Abbott'], '1929': ['Fay Abbott'], '1924': ['Fay Abbott'], '1923': ['Fay Abbott'], '1925': ['Fay Abbott'], '1921': ['Fay Abbott'], '1927': ['Fay Abbott']}
+SDG%{'1987': ['Vince Abbott'], '1988': ['Vince Abbott']}
+BSY%{'1946': ['Lou Abbruzzi']}
+MIA%{'1996': ['Karim Abdul-jabbar'], '1998': ['Karim Abdul-jabbar'], '1997': ['Karim Abdul-jabbar'], '1999': ['Karim Abdul-jabbar']}
+CLE%{'2008': ['Hamza Abdullah'], '1999': ['Karim Abdul-jabbar', 'Rahim Abdullah'], '2000': ['Rahim Abdullah']}
+IND%{'2000': ['Karim Abdul-jabbar']}
+DEN%{'2008': ['Hamza Abdullah'], '2006': ['Hamza Abdullah'], '2005': ['Hamza Abdullah'], '2007': ['Hamza Abdullah']}
+ARI%{'2010': ['Hamza Abdullah'], '2009': ['Hamza Abdullah']}
+MIN%{'2008': ['Husain Abdullah'], '2010': ['Husain Abdullah'], '2009': ['Husain Abdullah']}
+CIN%{'2003': ['Khalid Abdullah']}
+TAM%{'2001': ['Rabih Abdullah'], '1999': ['Rabih Abdullah'], '2000': ['Rabih Abdullah']}
+NWE%{'2004': ['Rabih Abdullah']}
+MIL%{'1926': ['Fred Abel']}
+KAN%{'1967': ['Bud Abell'], '1966': ['Bud Abell'], '1968': ['Bud Abell']}
+PIT%{'1984': ['Walter Abercrombie'], '1983': ['Walter Abercrombie'], '1982': ['Walter Abercrombie'], '1987': ['Walter Abercrombie'], '1985': ['Walter Abercrombie'], '1986': ['Walter Abercrombie']}
+PHI%{'1988': ['Walter Abercrombie']}
+GNB%{'1946': ['Cliff Aberson']}
