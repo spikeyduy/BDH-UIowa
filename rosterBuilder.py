@@ -37,10 +37,12 @@ class TeamsAll():
 def buildNodes(filename = "test.txt"):
     allTeams = TeamsAll()
     f = open(filename, "r")
+    names = open("testNames.txt", "w")
     for line in f:
         endFirstNameMark = line.index("|")
         endLastNameMark = line.index(",")
         playerName = line[endLastNameMark+2:endFirstNameMark] + " " + line[0:endLastNameMark]
+        names.write((playerName + "\n"))
         x = line[(endFirstNameMark+1):].split(";")
         for teamNameYear in x[:-1]:
             teamName = teamNameYear.split(":")[0]
@@ -49,7 +51,7 @@ def buildNodes(filename = "test.txt"):
                 newTeam = Team(teamName)
                 allTeams.addTeam(newTeam)
             allTeams.addToTeamRoster(teamName,playerName,year)
-
+    names.close()
     f.close()
     wf = open("testTeamRosters.txt", "w")
     for teamName3Letters in allTeams.teams:
