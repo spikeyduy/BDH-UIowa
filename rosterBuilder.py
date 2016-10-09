@@ -1,5 +1,5 @@
 
-## This file converted our compiled player data into team rosters to determine relationships between players
+## This file converts aggregated player data into team rosters to determine relationships between players
 
 #class team, has a name and a dictionary
 #dictionary<year:[player,player,...]

@@ -1,6 +1,7 @@
 import string
 
-
+#A very, very simple data aggregator
+#it reads each individual "[letter]Players" file in the directory and outputs one aggregated text file
 
 def compileAllDataSets():
     filename = "allPlayers"
