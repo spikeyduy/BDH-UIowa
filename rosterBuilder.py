@@ -1,7 +1,8 @@
 
-## This file converted out player data into team rosters to determine relationships
+## This file converted our compiled player data into team rosters to determine relationships between players
 
-
+#class team, has a name and a dictionary
+#dictionary<year:[player,player,...]
 class Team(str):
 
     def __init__(self,name):
@@ -15,7 +16,7 @@ class Team(str):
         else:
             self.rosters[year] = [playerName]
 
-
+#class TeamsAll that holds all of the teams in a list
 class TeamsAll():
     
     def __init__(self):
@@ -32,7 +33,7 @@ class TeamsAll():
         self.teams[appendIndex].addPlayer(playerName, year)      
         
         
- 
+# forgive the lack of data encapsulation, we were trying to hack this together quickly
 def buildNodes(filename = "test.txt"):
     allTeams = TeamsAll()
     f = open(filename, "r")
