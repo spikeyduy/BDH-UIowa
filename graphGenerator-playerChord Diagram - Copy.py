@@ -35,13 +35,12 @@ def main():
         Ze+=[Zn[source],Zn[e[1]], None]
         
     
-    trace1 = Scatter3d(x=Xn,y=Yn,z=Zn,mode='markers',name='players',marker=Marker(symbol="dot",size=1,color="rgb(50,0,0)",line=Line(color='rgp(50,50,50',width=.2)),text=playerList,hoverinfo='text')
-    trace2 = Scatter3d(x=Xe,y=Ye,z=Ze,mode='lines', line=Line(color='rgb(0,200,50)',width=1),hoverinfo="none")
-    layout = Layout(title="NFL Player Relationship Organization (250,000)", width = 1000, height=1000, showlegend = False, scene=Scene(xaxis=XAxis(axis),yaxis=YAxis(axis),zaxis=ZAxis(axis),), margin=Margin(t=100), hovermode='closest', annotations=Annotations([Annotation(showarrow=False, text="Source: <a href='http://www.databasefootball.com>[databasefootball.com]</a>", xref='paper',yref='paper',x=0,y=0.1, xanchor='left', yanchor='bottom',font=Font(size=14))]))
-                                                                                                                                                                                                                                                                   
+    trace1 = Scatter3d(x=Xn,y=Yn,z=Zn,mode='markers',name='actors',marker=Marker(symbol="dot",size=1,color="rgb(50,0,0)",line=Line(color='rgp(50,50,50',width=.2)),text=playerList,hoverinfo='text')
+    trace2 = Scatter3d(x=Xe,y=Ye,z=Ze,mode='lines', line=Line(color='rgb(0,0,200)',width=1),hoverinfo="none")
+    layout = Layout(title="NoneT", width = 1000, height=1000, showlegend = False, scene=Scene(xaxis=XAxis(axis),yaxis=YAxis(axis),zaxis=ZAxis(axis),), margin=Margin(t=100), hovermode='closest')
     data=Data([trace1, trace2])
     fig=Figure(data=data, layout=layout)
-    py.iplot(fig, filename="NFL-PlayerConnections-New")
+    py.iplot(fig, filename="testWithEdges3")
 
 
 def edgesSet(playerDictIndex):

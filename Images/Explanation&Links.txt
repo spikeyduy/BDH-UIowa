@@ -1,0 +1,27 @@
+# The first two images were out attempt at a visual representation of all relationships between all players
+# [Un]fortuneately, we had many, many data points so we had to turncate it to 250,000 edges between the ~23,000 nodes
+# As can be seen, it is somewhate unreadable
+
+# 1-1 = 22,138 players plotted (randomly assigned each time the image was generated)
+# 1-2 = 1,495,723 player relationships plotted
+	## relationship defined as player playing on the same team as someone else
+	## admittedly, the set does not account for the tuples being undirected
+		### i.e. it (1,2) would not be repeated, but it might coexist with (2,1)
+
+Figure 1-1 && https://plot.ly/~liamacrawford/0/nonet/
+Figure 1-2 && https://plot.ly/~liamacrawford/22/nfl-player-relationship-organization-250000/
+
+
+
+# Our next idea was to organize the data so that we could make something of it
+	## i.e. actually distinguish between lines and space
+	## and... you know, not have it crash
+
+# x=year(beginning of career), y=team(arbitrary value assigned), z=player(arbitrary value assigned)
+# we then mapped the jumps between teams that a plyer made during their career
+
+# 2-2 = 22,138 players across 122 teams spanning plotted based on criteria above
+# 2-3 = ~23,000 career jumps plotted, changing the x and y paremter, but not the z
+
+Figure 2-2 && /https://plot.ly/~liamacrawford/16/nfl-visualization/
+Figure 2-3 && https://plot.ly/~liamacrawford/

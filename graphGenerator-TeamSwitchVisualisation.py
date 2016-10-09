@@ -21,17 +21,16 @@ def main():
 
     axisx=dict(showbackground=False,showline=False,zeroline=False,showgrid=True,showticklabels=True,title='Year')
     axisy=dict(showbackground=False,showline=False,zeroline=True,showgrid=True,showticklabels=False,title='Team')
-    axisz=dict(showbackground=False,showline=False,zeroline=False,showgrid=False,showticklabels=False,title='')
-
+    axisz=dict(showbackground=False,showline=False,zeroline=False,showgrid=False,showticklabels=False,title='Player')
 
 
     trace1 = Scatter3d(x=Xp,y=Yp,z=Zp,mode='markers',name='Players',marker=Marker(symbol="dot",size=1,color="rgb(50,0,0)",line=Line(color='rgp(50,0,0',width=.1)),text=playerList,hoverinfo='text')
     trace2 = Scatter3d(x=Xe,y=Ye,z=Ze,mode='lines', line=Line(color='rgb(100,0,100)',width=1),hoverinfo="none")
-    layout = Layout(title="NFL Visualization", width = 1000, height=1000, showlegend = False, scene=Scene(xaxis=XAxis(axisx),yaxis=YAxis(axisy),zaxis=ZAxis(axisz),), margin=Margin(t=100), hovermode='closest')
+    layout = Layout(title="NFL Visualization - Player Team Jumps 1920-2011", width = 1000, height=1000, showlegend = False, scene=Scene(xaxis=XAxis(axisx),yaxis=YAxis(axisy),zaxis=ZAxis(axisz),), margin=Margin(t=100), hovermode='closest', annotations=Annotations([Annotation(showarrow=False, text="Source: <a href='http://www.databasefootball.com>[databasefootball.com]</a>", xref='paper',yref='paper',x=0,y=0.1, xanchor='left', yanchor='bottom',font=Font(size=14))]))
     data=Data([trace1, trace2])
     fig=Figure(data=data, layout=layout)
 
-    py.iplot(fig, filename="testNewDataWithEdgesR3")
+    # py.iplot(fig, filename="NFL Visualization - PTJ")
 
 def makePlayerNodes(listOfTeams,teamInfoDict):
     playerInfo = {} ## player:[indexNum,xCoord=startTeam*30000/122,yCoord=startYear*1000,zCoord=random.randrange(0:40000, 400)]
@@ -66,8 +65,13 @@ def makePlayerNodes(listOfTeams,teamInfoDict):
             if tt[0]!= splitTeam:
                 switches += 1
                 jumpNodes+= [ [(splitYear, teamInfoDict[splitTeam][2],playerZCoord),(tt[1],teamInfoDict[tt[0]][2],playerZCoord)]]
+                print(splitTeam)
                 splitTeam = tt[0]
-                splitYear = tt[1]          
+                splitYear = tt[1]
+                print(splitTeam)
+                print(tt[1])
+                print(playerName)
+                
         i+=1
 
     return playerInfo, playersX, playersY, playersZ, playerList, jumpNodes
