@@ -1,9 +1,14 @@
 # NFL Data (1920-2011) - Visualization and Analysis
 
 Contained here:
+
   Datasets - Well over 2,000,000 data points spanning 22,138 individual professional football player careers; all scraped from         databasefootball.com using XMLPath parsing via BeautifulSoup4 on October 8th, 2016
+  
   Scraping and Aggregation - Python scripts for doing said scraping, as well as for creating useful organizations of data to be manipulated (mostly reading and writing text files)
-  Visualization and Analysis - Yet even more Python scripts to generate graphs utilizing py.plot and related tools. 
+  
+  Visualization and Analysis - Yet even more Python scripts to generate graphs utilizing py.plot and related tools.
+  
+  
   
 To run these scripts, the following libraries should be installed: py.plot, lxml, bs4 (beautiful soup), and networkx. Also you will need login credentials for the py.plot API, available at 
 
