@@ -10,7 +10,8 @@
   
   
   
-To run these scripts, the following libraries should be installed: py.plot, lxml, bs4 (beautiful soup), and networkx. Also you will need login credentials for the py.plot API, available at 
+### Required Python Libraries:
+py.plot, lxml, bs4 (beautiful soup), and networkx. Also you will need login credentials for the py.plot API, available at 
 
 This repository was created for the Midwest Big Data Hackathon hosted by the University of Iowa on October 8-9, 2016. There was no official objective, other than to lock yourself in the Iowa Memorial Union and hack away for 30 hours. Our team took this as an opportunity to brush up on our Python skills, as well as push ourselves to try new things.
 
