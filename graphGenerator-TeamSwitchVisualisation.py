@@ -1,9 +1,14 @@
+## Simlar to other generator, but position of players is determined by a simple algorithm
+## Connections are limited to players jumping from team to team (x and y change, z remains the same)
+## Much easier to read, and reveals holes/patterns in the data
+
+
 import ast
 import igraph as ig
 import plotly.plotly as py
 from plotly.graph_objs import *
 import random
-py.sign_in('liamacrawford', 'xy31mz7ima')
+py.sign_in(,) ## enter your credentials ('username','API Key')
 
 def main():
     listOfTeams, teamNodes = giveTeamCodes()

@@ -24,4 +24,4 @@ Figure 1-2 && https://plot.ly/~liamacrawford/22/nfl-player-relationship-organiza
 # 2-3 = ~23,000 career jumps plotted, changing the x and y paremter, but not the z
 
 Figure 2-2 && /https://plot.ly/~liamacrawford/16/nfl-visualization/
-Figure 2-3 && https://plot.ly/~liamacrawford/
+Figure 2-3 && https://plot.ly/~liamacrawford/24/nfl-visualization-player-team-jumps-1920-2011/

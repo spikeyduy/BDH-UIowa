@@ -6,7 +6,7 @@ import plotly.plotly as py
 from plotly.graph_objs import *
 import random
 
-py.sign_in('liamacrawford', 'xy31mz7ima')
+py.sign_in(,) ## enter your credentials ('username','API Key')
 
 
 def main():

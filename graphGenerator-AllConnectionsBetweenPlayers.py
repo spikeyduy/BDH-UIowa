@@ -1,4 +1,6 @@
-## going to try and do py
+## Generates a 3d visualization of all players
+## Creates a massive file, so turncate at 250,000 connections
+## Must have plotly api key
 
 import ast
 import igraph as ig
@@ -6,7 +8,7 @@ import plotly.plotly as py
 from plotly.graph_objs import *
 import random
 
-py.sign_in('liamacrawford', 'xy31mz7ima')
+py.sign_in(,) ## enter your credentials ('username','API Key')
 
 
 def main():
